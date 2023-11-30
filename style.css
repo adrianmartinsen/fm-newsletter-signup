@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --primary: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--charcoal-grey);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media (max-width: 800px) {
+  body {
+    display: block;
+    background-color: var(--white);
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+h5 {
+  margin: 0;
+}
+
+form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+input:focus {
+  outline: none;
+}
+
+input {
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  padding: 1rem;
+  border: solid 1px var(--grey);
+}
+
+input:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+}
+
+li img {
+  margin-right: 1rem;
+}
+
+button {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  padding: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+.content {
+  padding: 1rem 1.5rem;
+}
+
+.card {
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 2rem;
+}
+
+@media (max-width: 800px) {
+  .card {
+    display: block;
+    padding: 0;
+    height: 100vh;
+  }
+
+  .mobile {
+    display: flex;
+    flex-flow: wrap;
+    margin: 5rem 0;
+  }
+}
+
+.invalid {
+  background-color: rgba(255, 98, 87, 0.2);
+  color: var(--primary);
+  border: solid 2px var(--primary);
+}
+
+#invalid {
+  color: var(--primary);
+}
+
+#warning {
+  display: flex;
+  justify-content: space-between;
+}
+
+#mobile-img {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  #desktop-img {
+    padding-left: 1.5rem;
+    display: none;
+  }
+
+  #mobile-img {
+    display: block;
+  }
+}
+
+#thanks {
+  display: none;
+  max-width: 375px;
+}
+
+#successEmail {
+  font-weight: 700;
+}
